@@ -1,10 +1,11 @@
 // var p = prompt("merge!")
-
+/*global $*/
 var $item = $('.carousel-item');
 var $wHeight = $(window).height();
 var $wWidth = $(window).width();
 
 // $item.eq(0).addClass('active');
+
 $item.height($wHeight);
 $item.width($wWidth);
 $item.addClass('full-screen');

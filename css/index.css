@@ -1,35 +1,34 @@
-*{
+.btn-dark{
 	border-radius: 0 !important;
 }
 
 img{
 	float: left;
-	/*display: block;*/
-	/*padding: 0 !important;*/
-	/*margin: 0 !important;*/
-  	width: 100%;
-  
+	display: block;
+  width: 100%;
+  height: 100%;
+  /*object-fit: cover;*/
 }
 
-img:hover{
-	-webkit-filter: sepia(1);
- 	filter: sepia(1);
+.row img{
+    filter: opacity(0.6);
+}
+
+
+.row img:hover{
+	-webkit-filter: opacity(1);
+ 	filter: opacity(1);
 }
 
 .intro{
     content:url("images/0.jpg"); 
     height: 100%;
     width: 99%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
 }
 
 #nume{
 	margin: 0 auto;
 	text-align: center;
-	/*margin-left: 1.66%;*/
 	font-family: Raleway;
 	font-size: 23px;
 	font-weight: 700;
@@ -41,18 +40,13 @@ img:hover{
 
 }
 
-.col{
-	padding: 0 !important;
+.col, .col-sm-12, .col-md-12 , .col-lg-6, .col-xl-6{
+	padding: 0 0 10px 0 !important;
 }
 
-/* Make the image responsive */
-/*.container img {*/
-/*  width: 100%;*/
-/*  height: auto;*/
-/*}*/
 
 /* Style the button and place it in the middle of the container/image */
-.container .btn {
+.container-fluid .btn {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -62,18 +56,16 @@ img:hover{
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  text-align: center;
 }
 
+.modal.show .modal-dialog{
+    margin: 0 !important;
+    max-width: 100% !important;
+}
 
 .full-screen {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.carousel-inner>.carousel-item>img, .carousel-inner>.item>a>img {
-display: block !important;
-max-width: 100% !important;
-height: auto !important;
-line-height: 1 !important;
 }
